@@ -9,8 +9,6 @@ Também terá um método chamado faltas, que simplesmente aumenta o número de f
 
 // Objeto aluno
 
-
-
 let aluno = {
     ConstruirAluno:        
         function Aluno(_nome, _qtdFaltas, _notas, _calcularMedia, _faltas) {
@@ -32,25 +30,6 @@ let aluno = {
     }
 }
 module.exports = aluno;
-
-// Função calcularMedia() que chamaremos via callback
-
-/*let calcMediaFun = function calcularMedia(){ 
-    let soma = 0;
-    for (let i = 0; i < this.notas.length; i++){
-        soma += this.notas[i]
-    }
-    const media = soma/this.notas.length;
-    return media.toFixed(2);
-} */
-
-
-// Função faltas() que chamaremos via callback
-/*
-let calcFaltas = function faltas(){ 
-    let addUmaFalta = this.quatidadeDeFaltas + 1;
-    return addUmaFalta;
-}*/
 
 
 // Construção de um alunos via função construtora
